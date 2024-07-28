@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Logo from '../assets/logo/FIFTY_XCHANGE.png'
+import Logo from '../../assets/logo/FIFTY_XCHANGE.png'
 
 export default function Header() {
 
@@ -13,12 +13,12 @@ export default function Header() {
         'Contact',
     ]    
     return (
-        <div className='borde border--black flex justify-between h-[10vh] items-center px-10 '>
+        <div className='borde border--black flex justify-between h-[10vh] items-center px5 lg:px-10 '>
             <div className=" w-[100px] brder">
                 <img src={Logo} className='w-full' alt="" />
             </div>
             <div className="">
-                <ul className='flex items-center gap-5 text-sm'>
+                <ul className='hidden lg:flex items-center gap-5 text-sm'>
                     {menu_items.map((item, index)=>(
                         <li key={index} className=' text-[grey] px-5 py-2 hover:text-[#2394E5] cursor-pointer ' >{item}</li>
                     ))}

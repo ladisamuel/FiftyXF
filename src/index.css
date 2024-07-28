@@ -1,9 +1,15 @@
+@import url('./assets/Fonts/WEB/css/satoshi.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('./assets/Fonts/WEB/css/satoshi.css');
 
 *{
-    /* font-family: 'Satoshi-Light'; */
+    font-family: 'Satoshi-Light';
+}
+
+/* Border Bottom Right Radius */
+.cs_BBRR{ 
+    border-bottom-right-radius: 50px;
 }
