@@ -4,11 +4,12 @@ import Hero from "../../component/main/Hero";
 import Services from "../../component/main/Services";
 import Features from "../../component/main/Features";
 import FAQ from "../../component/main/FAQ";
+import Footer from "../../component/main/Footer";
 
 function Landing() {
   return (
     <div className="">
-      <div className="min-h-[100vh] mb-52">
+      <div className="min-h-[100vh] ">
         <Header />
         <Hero />
         <div className="px-3 md:px-5 lg:px-10 pt-20">
@@ -25,6 +26,7 @@ function Landing() {
           <p className="text-center my-5">Get Answers to your Question  </p>
           <FAQ />
         </div>
+        <Footer />
       </div>
     </div>
   );

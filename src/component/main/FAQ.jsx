@@ -1,13 +1,22 @@
-import React from 'react'
+import React, { useState } from "react";
+import FAQData from "../../data/Faq.json";
+import Accordion from "./Accordion";
 
 export default function FAQ() {
+  const [showFaq, setShowFaq] = useState(null)
+
+  
+  const HandleFAQ = (index) => {
+    setShowFaq(showFaq === index ? null : index);
+  }
+
   return (
-    <div>
-        <div>   
-            <div className='border p-3 w-[70%] '>
-                <p>How does the exchange process work?</p>
-            </div>
+    <div className="m-auto mx-5">
+      {FAQData.map((item, index) => (
+        <div className=""  key={index} onClick={()=>HandleFAQ(index)}>
+          <Accordion item={item} isOpen={showFaq === index} />
         </div>
+      ))}
     </div>
-  )
+  );
 }
