@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('./assets/Fonts/WEB/css/satoshi.css');
+
+*{
+    /* font-family: 'Satoshi-Light'; */
+}
