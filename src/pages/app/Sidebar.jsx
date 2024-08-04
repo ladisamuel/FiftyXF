@@ -3,7 +3,7 @@ import Logo from '../../assets/logo/FIFTY_XCHANGE.png'
 
 export default function Sidebar() {
   return (
-    <div className="w-[17%] relative h-full bg-white ">
+    <div className="w-[17%] relative !fixed h-full bg-white ">
         <div className=" p-3">
             <img src={Logo} alt="" />
         </div>

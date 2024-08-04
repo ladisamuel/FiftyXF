@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import Landing from '../pages/main/Landing'
 import Login from '../pages/main/Login'
 import Register from '../pages/main/Register';
-import Main from '../pages/app/dashboard/Main';
+import Main from '../pages/app/Main';
 
 
 export default function Router() {
