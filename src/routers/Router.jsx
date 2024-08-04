@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import Landing from '../pages/main/Landing'
 import Login from '../pages/main/Login'
 import Register from '../pages/main/Register';
+import Main from '../pages/app/dashboard/Main';
 
 
 export default function Router() {
@@ -12,6 +13,7 @@ export default function Router() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Landing />} />
+                <Route path="/dashboard" element={<Main />} />
                 <Route path="/sign-in" element={<Login />} />
                 <Route path="/register" element={<Register />} />
             </Routes>

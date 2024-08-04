@@ -1,10 +1,16 @@
 import React from 'react'
 import GoogleIcon from '../../assets/icons/google.png'
 import LoginImg from '../../assets/login/girlWithCap.png'
+import Headers from '../../component/main/Header'
+import { useNavigate } from 'react-router-dom'
 export default function Login() {
+
+  const navigate = useNavigate()
+
   return (
-    <div>
-        <div className="flex row border h-[100vh] p-5 ">
+    <div className='  '>
+      {/* <Headers /> */}
+      <div className="flex row h-[100vh] borde py-5 lg:px-10 ">
           
             <div className="hidden lg:block w-[40%] bg[#cccccc] rounded-2xl ">
               <img src={LoginImg} className='h-full' alt="" />
@@ -52,7 +58,7 @@ export default function Login() {
               </div>
 
               <div className='absolute bottom-0 w-[80%] text-center pr-10 '>
-                <p>Don’t have an account? <span className='text-[#2394E5]' > Sign Up</span></p>
+                <p onClick={()=>navigate('/register')} className='cursor-pointer'>Don’t have an account? <span className='text-[#2394E5]' > Sign Up</span></p>
               </div>
 
             </div>
