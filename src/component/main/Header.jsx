@@ -39,6 +39,7 @@ export default function Header() {
                         }
                         </div>
                     <button onClick={()=>route('/sign-in')} >Login</button>
+                    <button onClick={()=>route('/dashboard')} >Dashboard</button>
                     <button onClick={()=>route('/register')} className='bg-[#2394E5] rounded-full px-7 py-3 text-white ' >Sign Up</button>
                 </ul>
             </div>
