@@ -6,6 +6,7 @@ export default function Main() {
     <div>
         <div className="border h-[100vh] bg-[grey]">
         <Sidebar />
+        {/* show */}
         </div>
     </div>
   )
