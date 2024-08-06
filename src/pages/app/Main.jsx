@@ -5,16 +5,16 @@ import Dashboard from "./dashboard/Dashboard";
 
 export default function Main() {
   return (
-    <div>
-      <div className="flex items-start justify-start h-[100vh] bg-gray-300">
-        <div className="w-[17%] h-[100vh]">
+    <div className="">
+      <div className="lg:flex items-start justify-start  bg-gray-300">
+        <div className="hidden lg:block lg:w-[17%] h-[100vh]">
           <Sidebar />
         </div>
-        <div className="ml-auto h-[100vh] w-[83%] ">
-            <div className="fixed top-0 w-[83%] h-[10vh] ">
+        <div className="ml-auto lg:h-[100vh] w-full lg:w-[83%] bg-grey-300 ">
+            <div className="lg:fixed top-0 w-full lg:w-[83%] h-[10vh] ">
               <Topbar />
             </div>
-            <div className="fixed bottom-0  w-[83%] h-[90vh]">
+            <div className="lg:fixed lg:top-[10%] border-red-500 w-full lg:w-[83%] md:h-[90vh]">
               <Dashboard />
             </div>
         </div>
