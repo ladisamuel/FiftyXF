@@ -5,8 +5,8 @@ export default function Topbar() {
   return (
     <div>
         <div className=" bg-white border-l-2 p-3">
-            <div className=" flex justify-between items-center">
-                <div className="w-[60px] ">
+            <div className="ml-auto lg:w-fit flex justify-between items-center">
+                <div className="lg:hidden w-[70px] ">
                     <img className='w-full' src={Logo} alt="" />
 
                 </div>
